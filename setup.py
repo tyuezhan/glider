@@ -29,7 +29,7 @@ class CMakeBuild(build_ext):
         )
         # After building, rename the file to what setuptools expects
         built_so = os.path.join(extdir, "libglider_bindings.so")
-        target_so = os.path.join(extdir, "glider.cpython-310-x86_64-linux-gnu.so")
+        target_so = os.path.join(extdir, "glider_bindings.cpython-310-x86_64-linux-gnu.so")
         if os.path.exists(built_so):
             os.rename(built_so, target_so)
 
